@@ -26,6 +26,7 @@
       {{- end }}
     </header>
     <div class="post-content">
+      {{ partial "toc.html" . }}
       {{ .Content }}
     </div>
     <div class="post-footer">
