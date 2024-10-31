@@ -39,6 +39,9 @@
   }
 
   img {
-    max-width: 100%;
+    background-color : $light-color;
+    margin: auto;
+    display: block;
+    max-width: 90%;
   }
 }
