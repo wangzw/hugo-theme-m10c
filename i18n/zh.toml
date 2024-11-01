@@ -1,1 +1,2 @@
 "Table of Contents" = "目录"
+"reading_time" = "阅读 {{ .ReadingTime }} 分钟"

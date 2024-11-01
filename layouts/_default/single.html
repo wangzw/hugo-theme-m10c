@@ -6,11 +6,11 @@
       <div class="post-meta">
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
-          {{ .PublishDate.Format "Jan 2, 2006" }}
+          {{ .PublishDate | time.Format ":date_medium" }}
         </div>
         <div>
           {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
-          {{ .ReadingTime }} min read
+          {{ i18n "reading_time" . }}
         </div>
         {{- with .Params.tags }}
         <div>

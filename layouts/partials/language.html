@@ -1,0 +1,10 @@
+{{- with .Site.Home.AllTranslations }}
+<div>
+  {{ range $key, $item := . }}
+    {{- if ne $key 0 }}
+    {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
+    {{- end }}
+  <a href="{{ .Permalink }}">{{ $item.Language.LanguageName }}</a>
+  {{ end }}
+</div>
+{{- end }}

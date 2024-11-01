@@ -1,1 +1,1 @@
-"Table of Contents" = "Table of Contents"
+"reading_time" = "{{ .ReadingTime }} minute read"
