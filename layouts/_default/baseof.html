@@ -29,7 +29,7 @@
           {{- if ne $key 0 }}
             {{ $.Site.Params.menu_item_separator | default " - " | safeHTML }}
           {{ end }}
-          <a class="app-header-menu-item" href="{{ $item.URL | relLangURL }}">{{ i18n $item.Name | default $item.Name }}</a>
+          <a class="app-header-menu-item" href="{{ $item.URL | relLangURL }}" {{ with $item.Params.target }}target="{{ . }}"{{ end }}>{{ i18n $item.Name | default $item.Name }}</a>
         {{- end }}
       </nav>
       {{- end }}
